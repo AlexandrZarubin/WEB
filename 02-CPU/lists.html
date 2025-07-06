@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+            ul > Li::before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-image: url('ico/cpu1.ico');
+                background-size: contain;
+                /*background-repeat: no-repeat;*/
+              
+            }
+    </style>
+</head>
+<body>
+    <h1>Списки</h1>
+    <h2>Нумерованный список</h2>
+    <ol style="font-size: 22px; list-style-type: upper-roman;" start="-1" >
+        <li>Вхождение 1</li>
+        <li>Вхождение 2</li>
+        <li>Вхождение 3</li>
+        <li>Вхождение 4</li>
+        <li>Вхождение 5</li>
+    </ol>
+    
+    <h2>Маркированный список</h2>
+    <ul ">
+        <li>Вхождение 1</li>
+        <li>Вхождение 2</li>
+        <li>Вхождение 3</li>
+    </ul>
+</body>
+</html>

@@ -31,6 +31,13 @@ a
 {
     color: #00ffff;
 }
+    a:visited {
+        color: #b6ff00;
+    }
+    a:hover{
+        font-weight:800;
+        font-size:32px;
+    }
 
 blockquote {
     font-style: italic;                          
@@ -39,7 +46,7 @@ blockquote {
 }
 
 
-    blockquote::before  {
+    blockquote::before {
         content: "❝";
         font-size: 3rem;
         color: #777;
@@ -64,6 +71,10 @@ figure
     font-style: italic; 
     font-size: 18px; 
     margin: 20px auto; 
+}
+ul /* Непосредственная вложенность */
+{
+    list-style-type :none;
 }
 
 
