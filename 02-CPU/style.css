@@ -36,7 +36,7 @@ a
     }
     a:hover{
         font-weight:800;
-        font-size:32px;
+        font-size:23px;
     }
 
 blockquote {
@@ -72,9 +72,36 @@ figure
     font-size: 18px; 
     margin: 20px auto; 
 }
-ul /* Непосредственная вложенность */
-{
-    list-style-type :none;
+ul /* Непосредственная вложенность */ {
+    list-style-type: none;
+    
 }
+table {
+    border: solid 2px;
+    margin: 20px auto;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+thead {
+    background-color: #6B5FB5;
+    font-weight: bold;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    width: 150px;
+}
+.h_top_arrow {
+    text-decoration: none;
+    font-size: 20px;
+    float: right;
+    margin-left: 10px;
+    color: #333;
+}
+
+    .h_top_arrow:hover {
+        color: #000;
+    }
 
 

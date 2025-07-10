@@ -1,0 +1,105 @@
+﻿table{
+    margin:auto;
+}
+th {
+    background-color: #f0f0f0;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #999;
+}
+
+.alkali {
+    background-color: #ffcfcf;
+}
+
+.alkaline-earth {
+    background-color: #ffe0b3;
+}
+
+.transition {
+    background-color: #d0e4ff;
+}
+
+.boron {
+    background-color: #e0e0e0;
+}
+
+.carbon {
+    background-color: #cccccc;
+}
+
+.nitrogen {
+    background-color: #ccffcc;
+}
+
+.chalcogen {
+    background-color: #ffffcc;
+}
+
+.halogen {
+    background-color: #b3ffcc;
+}
+
+.noble-gas {
+    background-color: #ccffff;
+}
+
+
+.group-numbers th {
+    background-color: #eeeeee;
+    font-size: 0.85em;
+    border: 1px solid #999;
+}
+
+td.element {
+    width: 60px;
+    height: 80px;
+    vertical-align: top;
+    font-size: 0.8em;
+    border: 1px solid #ccc;
+}
+
+    td.element .symbol {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    td.element .name {
+        font-size: 0.8em;
+        color: #333;
+    }
+
+td[colspan] {
+    background-color: #f9f9f9;
+}
+/*------------------------*/
+
+
+.lanthanide {
+    background: #6B4E27;
+}
+/* коричневый */
+.actinoid {
+    background: #8B1C62;
+}
+/* малиновый */
+.period-label {
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    color: white;
+    background: #0000cc;
+    border: 1px solid #222;
+}
+
+.actinoid-group {
+    background-color: #8B1C62; 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #333;
+}
