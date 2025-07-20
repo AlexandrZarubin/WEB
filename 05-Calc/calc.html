@@ -19,11 +19,69 @@
                 <input type="button" />
             </div>
         </div>
+        
 
 
+        <div id="client-rect">
 
-        <div id="client-rect"> </div>
+            <div id="menu-bar">
+                <div class="menu-item">Edit</div>
+                <div class="menu-item">View</div>
+                <div class="menu-item">Help</div>
+            </div>
 
+            <input type="text" id="display" value="0" readonly>
+            
+            <div id="buttons-area">
+
+                <!-- верхний блок -->
+                <div id="top-cmd">
+                    <div class="empty-cell"></div>
+                    <button class="btn red-text">Backspace</button>
+                    <button class="btn red-text">CE</button>
+                    <button class="btn red-text">C</button>
+                </div>
+
+                 <!--колонка памяти--> 
+                <div class="body-row">
+                    <div id="mem-col">
+                        <button class="btn red-text">MC</button>
+                        <button class="btn red-text">MR</button>
+                        <button class="btn red-text">MS</button>
+                        <button class="btn red-text">M+</button>
+                    </div>
+
+
+                    <!--основная клавиатура-->
+                    <div id="keypad">
+                        <button class="btn">7</button>
+                        <button class="btn">8</button>
+                        <button class="btn">9</button>
+                        <button class="btn op-text">/</button>
+                        <button class="btn op-text">sqrt</button>
+
+                        <button class="btn">4</button>
+                        <button class="btn">5</button>
+                        <button class="btn">6</button>
+                        <button class="btn op-text">*</button>
+                        <button class="btn op-text">%</button>
+
+                        <button class="btn">1</button>
+                        <button class="btn">2</button>
+                        <button class="btn">3</button>
+                        <button class="btn op-text">-</button>
+                        <button class="btn op-text">1/x</button>
+
+                        <button class="btn">0</button>
+                        <button class="btn">+/-</button>
+                        <button class="btn">.</button>
+                        <button class="btn op-text">+</button>
+                        <button class="btn op-text red-text">=</button>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!--clientreact-->
     </div>
 </body>
 </html>

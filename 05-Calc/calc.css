@@ -4,10 +4,14 @@
     background-size:cover;
     font-family:Tahoma;
 }
-#main-window
-{
+#main-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
     width: 400px;
-    height:300px;
+    height: 300px;
 }
 #title-bar{
     width:400px;
@@ -17,6 +21,7 @@
     border-top-right-radius:8px;
     color:white;
     text-shadow:1px 1px 1px black;
+
 }
 #title-bar, #window-icon-and-title {
     display: flex;
@@ -39,7 +44,110 @@
 
 #client-rect{
     width:400px;
-    height:268px;
+    height:300px;
     background-color:rgb(235,233,216);
 
+}
+#menu-bar {
+    height: 20px;
+    align-items: center;
+    display: flex;
+    padding: 0 8px;
+    border-bottom: 1px solid #aaa;
+    user-select: none;
+}
+    #menu-bar .menu-item {
+        margin-right: 16px;
+        font-size: 14px;
+        line-height: 20px;
+        cursor: default;
+    }
+
+#display {
+    box-sizing: border-box;
+    display: block;
+    width: 98%;
+    height: 30px;
+    font-size: 16px;
+    text-align: right;
+    padding: 5px;
+    border: 1px solid #888;
+    background: #fff;
+    margin: 0 auto ;
+}
+
+
+#buttons-area {
+    display: flex;
+    flex-direction: column; /* верхний ряд + нижняя область */
+    gap: 8px;
+    padding: 8px;
+}
+
+/* верхний ряд Backspace / CE / C */
+#top-cmd {
+    display: flex;
+    gap: 4px;
+}
+
+    #top-cmd .empty-cell,
+    #top-cmd .btn {
+        flex: 1;
+    }
+/* все 4 «клетки» одинаковой ширины */
+
+/* нижняя строка (колонка памяти слева, клавиатура справа) */
+.body-row {
+    display: flex;
+    gap: 8px;
+}
+
+/* колонка памяти */
+#mem-col {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 20%; /* ширина памяти ≈ 1 из 6 частей */
+}
+
+/* клавиатура 5×4 + верхний ряд */
+#keypad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 80%; /* остальная ширина */
+}
+
+    /* каждая кнопка в keypad занимает 20 % строки, чтобы вышло 5 столбцов */
+    #keypad .btn {
+        flex: 0 0 calc(20% - 4px); /* -4 px, чтобы учесть gap */
+    }
+
+/* базовый стиль кнопок (как был) */
+.btn {
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #0071d4;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+/* пустая декоративная клетка */
+.empty-cell {
+    height: 40px;
+    border: 1px solid #888;
+    background: #ebe9d8;
+    border-radius: 4px;
+}
+
+/* цветовые модификаторы */
+.red-text {
+    color: red;
+}
+
+.op-text {
+    color: blue;
 }
