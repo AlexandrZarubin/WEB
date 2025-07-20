@@ -95,7 +95,7 @@
         flex: 1;
     }
 
-/* нижняя строка (колонка памяти слева, клавиатура справа) */
+/* колонка памяти слева, клавиатура справа */
 .body-row {
     display: flex;
     gap: 8px;
@@ -114,15 +114,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
-    width: 80%; /* остальная ширина */
+    width: 80%; 
 }
 
     
     #keypad .btn {
-        flex: 0 0 calc(20% - 4px); /* -4 px, чтобы учесть gap */
+        flex: 0 0 calc(20% - 4px); 
     }
 
-/* базовый стиль кнопок (как был) */
+
 .btn {
     height: 40px;
     font-size: 14px;
@@ -134,7 +134,7 @@
     padding: 0;
 }
 
-/* пустая декоративная клетка */
+
 .empty-cell {
     height: 40px;
     border: 1px solid #888;
@@ -142,7 +142,7 @@
     border-radius: 4px;
 }
 
-/* цветовые модификаторы */
+
 .red-text {
     color: red;
 }
