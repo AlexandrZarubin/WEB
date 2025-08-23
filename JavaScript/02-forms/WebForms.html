@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WebForms</title>
+</head>
+<body>
+    <h1>WebForms</h1>
+
+    <form action="handler.php" method="post" oninput="calcPower()">
+        <label for="base1">Основание степени</label>
+        <input type="number" min="0" id="base1" />
+        <br />
+        <label for="exponent1">Показатель степени</label>
+        <input type="number" id="exponent1" />
+        <br />
+        <div id="power"></div>
+    </form>
+
+    <script>
+        function calcPower()
+        {
+            let base = document.getElementById("base1").value;
+            let exponent = document.getElementById("exponent1").value;
+            if (base !== "" && exponent !== "")
+            {
+                document.getElementById("power").innerHTML = base ** exponent;
+            }
+            else
+            {
+                document.getElementById("power").innerHTML = "";
+            }
+        }
+    </script>
+</body>
+</html>

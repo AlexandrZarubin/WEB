@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Figure</title>
+</head>
+<body>
+    <h1>Figures</h1>
+
+    <!--<script src="script.js"></script>-->
+
+<pre>
+<script>
+    let n = Number(prompt("Введите размер фигуры"))
+    //let n = 5;
+
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+    document.write("<br>");
+
+
+    for (let i = 1; i <= n; i++)
+    {
+        for (let j = 1; j <= i; j++)
+        {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+    document.write("<br>");
+
+    for (let i = n; i >= 1; i--)
+    {
+        for (let j = 1; j <= i; j++)
+        {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+        //document.write("<br>");
+        //document.write("<br>");
+
+    for (let i = 1; i <= n; i++)
+    {
+        // сначала пробелы
+        for (let s = 1; s <= n - i; s++)
+        {
+            document.write("&nbsp;"); // неразрывный пробел (чтобы виделся в HTML)
+        }
+        // потом звёздочки
+        for (let j = 1; j <= i; j++)
+        {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+        document.write("<br>");
+        document.write("<br>");
+
+    for (let i = n; i >= 1; i--)
+    {
+        for (let r = n - i; r >= 1; r--)
+        {
+            document.write(" ");
+        }
+
+        for (let j = 1; j <= i; j++)
+        {
+            document.write("*");
+        }
+
+        document.write("<br>");
+    }
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+//-----------------------------------------------------------------
+    // верхняя часть
+    for (let i = n; i >= 1; i--) {
+        // пробелы перед "/"
+        for (let p = i - 1; p >= 1; p--) {
+            document.write(" ");
+        }
+
+        document.write("/");
+
+        // пробелы внутри ромба
+        for (let j = n - i; j >= 1; j--) {
+            document.write("  ");
+        }
+
+        document.write("\\<br>");
+    }
+
+    // нижняя часть
+    for (let i = n; i >= 1; i--) {
+        // пробелы перед "\"
+        for (let j = n - i; j >= 1; j--) {
+            document.write(" ");
+        }
+
+        document.write("\\");
+
+        // пробелы внутри ромба
+        for (let j = i - 1; j >= 1; j--) {
+            document.write("  ");
+        }
+
+        document.write("/<br>");
+    }
+
+//-----------------------------------------------------------------
+    document.write("<br>");
+    document.write("<br>");
+
+    for (let i = 1; i <= n; i++)
+    {
+        for (let j = 1; j <= n; j++)
+        {
+            if ((i + j) % 2 === 0)
+            {
+                document.write("+");
+            } else
+            {
+                document.write("-");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>
+
+
+
+</body>
+</html>

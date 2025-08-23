@@ -1,0 +1,14 @@
+﻿body {
+    background: #1E1E1E;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+pre {
+    line-height: 1.2;
+    font-family: monospace; /* все символы одинаковой ширины */
+    letter-spacing: 4px; /* расстояние между символами */
+}

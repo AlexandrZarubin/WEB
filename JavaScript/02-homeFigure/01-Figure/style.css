@@ -1,0 +1,28 @@
+﻿body {
+    background-color: #1E1E1E;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 40px; 
+    margin-top: 50px;
+}
+
+pre {
+    line-height: 1.2;
+    font-family: monospace; /* все символы одинаковой ширины */
+    letter-spacing: 4px; /* расстояние между символами */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #666;
+    margin: 10px 0;
+}
+p {
+    color: lightgray; 
+    text-align: center; 
+    font-size: 20px; 
+    margin-top: 20px; 
+}
