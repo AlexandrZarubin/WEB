@@ -15,20 +15,20 @@ document.addEventListener("mousemove", GetMouseCoords);
 function SwitchBackground() {
     // получаем элемент
     let switchBackground = document.getElementById("switch-background");
+    //if (switchBackground.style.backgroundImage === 'url("img/moon.png")')
+    //{
+    //    switchBackground.style.backgroundImage = 'url("img/sun.png")';
+    //    document.body.className = 'dark';
+    //}
+    //else
+    //{
+    //    switchBackground.style.backgroundImage = 'url("img/moon.png")';
+    //    document.body.className = 'light';
+    //}
+    let delay = document.getElementById('delay').value;
 
-    const duration = parseFloat(document.getElementById("themeSpeed").value) || 0;
-    document.body.style.transition = `background-color ${duration}s, color ${duration}s`;
+    document.body.style.transition = `background-color ${delay}s,color ${delay}s`;
+    document.getElementById('switch-background').style.transition = `background-image ${delay}s`;
+    document.body.className = document.body.className === "light" ? "dark" : "light";
 
-    if (switchBackground.style.backgroundImage === 'url("img/moon.png")')
-    {
-        switchBackground.style.backgroundImage = 'url("img/sun.png")';
-        document.body.style.background = "#FFFFFF";
-        document.body.style.color = "black";
-    }
-    else
-    {
-        switchBackground.style.backgroundImage = 'url("img/moon.png")';
-        document.body.style.background = "#1E1E1E"
-        document.body.style.color = "#D4D4D4";
-    }
 }
