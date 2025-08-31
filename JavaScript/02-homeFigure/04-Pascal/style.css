@@ -1,0 +1,11 @@
+﻿body {
+    background: #1E1E1E;
+    color: white;
+    font-family: monospace; /* фиксированная ширина */
+    text-align: center;
+}
+
+pre {
+    font-family: monospace;
+    line-height: 1.5;
+}

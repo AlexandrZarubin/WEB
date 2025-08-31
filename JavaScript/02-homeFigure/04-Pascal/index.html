@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Pascal's Triangle</title>
+</head>
+<body>
+    <h1>Треугольник Паскаля (через факториалы)</h1>
+
+    <pre>
+    <script src="func.js"></script>
+    <script>
+        let n = Number(prompt("Введите число рядов:"));
+
+        for (let i = 0; i < n; i++)
+        {
+            for (let s = 0; s < (n - i); s++)
+            {
+                document.write("        "); // отступы для центрирования
+            }
+            for (let j = 0; j <= i; j++)
+            {
+                let num = Math.round(C(i, j)); // округляем!
+                let cell = String(num).padStart(8, " "); // ширина колонки 8
+                document.write(cell);
+            }
+            document.write("<br>");
+        }
+</script>
+    </pre>
+</body>
+</html>
