@@ -32,3 +32,23 @@ function SwitchBackground() {
     document.body.className = document.body.className === "light" ? "dark" : "light";
 
 }
+function UploadPhoto()
+{
+    //let image = document.getElementById('photo');
+    //let students_photo = document.getElementById('students-photo');
+    //let filename = students_photo.value.split('\\');
+    //filename = filename[filename.length - 1];
+    //image.src = filename;
+    //alert(filename);
+
+    let image = document.getElementById('photo');
+    let students_photo = document.getElementById('students-photo');
+    let file = students_photo.files[0];
+    let reader = new FileReader();
+    reader.onload = function (event)
+    {
+        image.src = event.target.result;
+    }
+    reader.readAsDataURL(file);
+}
+
